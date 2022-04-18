@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FiveStarsLibrary</string>
+    <string name="title_dialog">RATE THIS APP</string>
+    <string name="content">How much do you love app?</string>
+    <string name="do_you_like">Do You Like VPN Master</string>
+    <string name="FeedBack">RATE NOW</string>
+    <string name="message">Messages</string>
+
+</resources>

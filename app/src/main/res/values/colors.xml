@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#E6E5EB</color>
+    <color name="grey2">#C1C1C1</color>
+    <color name="grey3">#EEEEF0</color>
+    <color name="grey_text">#7D7D7D</color>
+    <color name="grey_text_to">#828282</color>
+    <color name="grey_text_done">#E0E0E0</color>
+    <color name="blue_text_receive">#07144A</color>
+    <color name="grey_round_chat">#8E8E93</color>
+
+    <color name="primary">#007AFF</color>
+
+
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/tvSendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_send_chat"
+                android:fontFamily="@font/sfpro_regular"
+                android:paddingLeft="14dp"
+                android:paddingTop="6dp"
+                android:paddingRight="17dp"
+                android:paddingBottom="11dp"
+                android:text="@string/messages"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

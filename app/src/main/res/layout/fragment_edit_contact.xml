@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".ui.main.editcontact.EditContactFragment">
+            <TextView
+                android:id="@+id/tvCancelEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_regular"
+                android:text="@string/cancel"
+                android:textColor="@color/primary"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tvDoneEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_semibold"
+                android:text="@string/done"
+                android:textColor="@color/primary"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="13dp"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivImageEditContact"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/ic_user_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDoneEdit" />
+
+            <TextView
+                android:id="@+id/tvAddImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_image"
+                android:fontFamily="@font/sfpro_medium"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/ivImageEditContact"
+                app:layout_constraintLeft_toLeftOf="@id/ivImageEditContact"
+                app:layout_constraintRight_toRightOf="@id/ivImageEditContact"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_marginTop="46dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_text_done"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddImage" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:background="@null"
+                android:textCursorDrawable="@color/primary"
+                android:backgroundTint="@color/primary"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/user_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                tools:ignore="EllipsizeMaxLines" />
+            <ImageView
+                android:id="@+id/ivDelNameContact"
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_exit"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                app:layout_constraintBottom_toTopOf="@id/view2"
+                />
+            <View
+                android:id="@+id/view2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_text_done"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etUserName" />
+
+            <EditText
+                android:id="@+id/etUserPhone"
+                android:background="@null"
+                android:textCursorDrawable="@color/primary"
+                android:backgroundTint="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingBottom="16dp"
+                android:layout_marginStart="25dp"
+                android:paddingEnd="70dp"
+                android:hint="@string/user_phone"
+                app:layout_constraintBottom_toTopOf="@id/view3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+            <ImageView
+                android:id="@+id/ivDelPhoneContact"
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_exit"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view2"
+                app:layout_constraintBottom_toTopOf="@id/view3"
+                />
+            <View
+                android:id="@+id/view3"
+                android:layout_marginBottom="40dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_text_done"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etUserPhone" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

@@ -1,7 +1,21 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id 'com.android.application' version '7.1.0' apply false
-    id 'com.android.library' version '7.1.0' apply false
+buildscript {
+    ext.kotlin_version = "1.4.21"
+    apply from: "dependencies.gradle"
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//        classpath "io.realm:realm-gradle-plugin:$versions.realmVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$versions.hiltVersion"
+        classpath "com.google.gms:google-services:$versions.googleServices"
+
+    }
 }
 
 task clean(type: Delete) {

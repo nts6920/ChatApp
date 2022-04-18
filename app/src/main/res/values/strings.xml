@@ -1,3 +1,60 @@
 <resources>
     <string name="app_name">ChatApp1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="font">Font</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="rate">Rate App</string>
+    <string name="feedback">Feedback</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="to">To:</string>
+
+    <string name="sp_pro_default">SF Pro Text (Default)</string>
+    <string name="rubik">Rubik</string>
+    <string name="lato">Lato</string>
+    <string name="raleway">Raleway</string>
+    <string name="noto_sans">Noto Sans</string>
+    <string name="sp_pro">SF Pro Text</string>
+    <string name="how_much_do_you_love_app">How much do you love app?</string>
+    <string name="rate_now">RATE NOW</string>
+    <string name="contacts">Contacts</string>
+    <string name="search">Search</string>
+    <string name="messages">Messages</string>
+    <string name="detail">Detail</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="add_image">Add Image</string>
+    <string name="user_name">User name</string>
+    <string name="user_phone">User phone</string>
+    <string name="new_messages">New Messages</string>
+    <string name="chat_wallpaper">Chat Wallpaper</string>
+    <string name="color">COLOR</string>
+    <string name="wallpaper2">WALLPAPER</string>
+    <string name="settings">Settings</string>
+    <string name="send_email_report_app">Send Feedback:</string>
+    <string name="contact">Edit</string>
+    <string name="have_not_mess_yet">You haven\'t enter message yet</string>
+    <string name="search_contact">search contact</string>
+    <string name="error_occured">\"Error occurred! \"</string>
+    <string name="is_number">.*\\d.*</string>
+    <string name="format">format</string>
+    <string name="dir_image">image/*</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="to_newmess">To:\u0020</string>
+    <string name="regex_number">.*\\d.*</string>
+    <string name="need_permission">Need Permissions</string>
+    <string name="mess_dialog_setting">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="to_settings">GOTO SETTINGS</string>
+    <string name="have_not_entered_phone_yet">You haven\'t entered phone number yet</string>
+    <string name="provide_valid_number">Please provide a valid number</string>
+    <string name="mess">Message</string>
+    <string name="no_support_get_video">No support to get video</string>
+    <string name="regex_num">^[0-9]*$</string>
+    <string name="rate_app">rate app</string>
+    <string name="sent_mess_successfully">sent mess successfully</string>
+    <string name="sent_mess_error">sent mess error</string>
+    <string name="no_permision_call">NO_PERMISSION_CALL</string>
+
+
 </resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.chatapp1.ui.main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailContactFragment2"
+            app:destination="@id/detailContactFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_wallpaperFragment"
+            app:destination="@id/wallpaperFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newMessFragment"
+            app:destination="@id/newMessFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editFontFragment"
+            app:destination="@id/editFontFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editContactFragment"
+        android:name="com.example.chatapp1.ui.main.editcontact.EditContactFragment"
+        android:label="EditContactFragment" >
+        <action
+            android:id="@+id/action_editContactFragment_to_detailContactFragment2"
+            app:destination="@id/detailContactFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.chatapp1.ui.main.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailContactFragment2"
+        android:name="com.example.chatapp1.ui.main.detailcontact.DetailContactFragment"
+        android:label="DetailContactFragment" >
+        <action
+            android:id="@+id/action_detailContactFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_detailContactFragment2_to_editContactFragment"
+            app:destination="@id/editContactFragment" />
+        <action
+            android:id="@+id/action_detailContactFragment2_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.chatapp1.ui.main.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wallpaperFragment"
+        android:name="com.example.chatapp1.ui.main.wallpaper.WallpaperFragment"
+        android:label="WallpaperFragment"
+        tools:layout="@layout/fragment_wallpaper">
+        <action
+            android:id="@+id/action_wallpaperFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newMessFragment"
+        android:name="com.example.chatapp1.ui.main.newmess.NewMessFragment"
+        android:label="NewMessFragment" >
+        <action
+            android:id="@+id/action_newMessFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_newMessFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.chatapp1.ui.main.contacts.ContactFragment"
+        android:label="ContactFragment" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.chatapp1.ui.main.messages.MessageFragment"
+        android:label="MessageFragment" />
+    <fragment
+        android:id="@+id/editFontFragment"
+        android:name="com.example.chatapp1.ui.main.editfont.EditFontFragment"
+        android:label="fragment_edit_font"
+        tools:layout="@layout/fragment_edit_font" >
+        <action
+            android:id="@+id/action_editFontFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/rateAppDialog"
+        android:name="com.example.chatapp1.ui.dialog.RateAppDialog"
+        android:label="RateAppDialog" />
+</navigation>

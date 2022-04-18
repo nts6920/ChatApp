@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FiveStarsLibrary</string>
+    <string name="title_dialog">RATE THIS APP</string>
+    <string name="content">How much do you love our app?</string>
+    <string name="do_you_like">あなたはVPN Masterが好きですか</string>
+    <string name="FeedBack">フィードバック</string>
+</resources>
